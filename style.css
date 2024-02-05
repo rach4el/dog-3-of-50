@@ -24,22 +24,27 @@
   .container.show-nav {
     transform: rotate(-20deg);
   }
-
+  
   .circle-container {
     position: fixed;
     top: -100px;
     left: -100px;
   }
-
+  
   .circle {
     background-color: #ff7979;
     height: 200px;
     width: 200px;
+    border-radius: 50%;
     position: relative;
     transition: transform 0.5s linear;
-}
-
-.circle button {
+  }
+  
+  .container.show-nav .circle {
+    transform: rotate(-70deg);
+  }
+  
+  .circle button {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -49,22 +54,23 @@
     border: 0;
     font-size: 26px;
     color: #fff;
-}
-
-.circle button:focus {
+  }
+  
+  .circle button:focus {
     outline: none;
-}
-
-.circle button#open {
+  }
+  
+  .circle button#open {
     left: 60%;
-}
-
-.circle button#close {
+  }
+  
+  .circle button#close {
     top: 60%;
     transform: rotate(90deg);
     transform-origin: top left;
-}
-
-.content img {
-    max-width: 100%;
-}
+  }
+  
+  .container.show-nav + nav li {
+    transform: translateX(0);
+    transition-delay: 0.3s;
+  }
