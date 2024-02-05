@@ -1,23 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
 
-*{
+* {
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'Open Sans', sans-serif;
+  }
+  
+  body {
+    font-family: 'Lato', sans-serif;
     background-color: #333;
     color: #222;
     overflow-x: hidden;
     margin: 0;
-}
-
-.container {
+  }
+  
+  .container {
     background-color: #fafafa;
     transform-origin: top left;
     transition: transform 0.5s linear;
-}
-
-.container.show-nav {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+  }
+  
+  .container.show-nav {
     transform: rotate(-20deg);
-}
+  }
